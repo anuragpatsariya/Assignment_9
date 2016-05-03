@@ -1,34 +1,36 @@
 <!doctype html>
 <html>
-  <head>
-    <title>A Simple App</title>
 
-    <link href='style.css' rel='stylesheet' type='text/css'>
-  </head>
+<head>
+  <title>A Simple App</title>
 
-  <body>
-    <header>
-      <h1>Comments</h1>
-      <p>A simple app that allows a user to input comments</p>
-    </header>
+  <link href='style.css' rel='stylesheet' type='text/css'>
+</head>
 
-    <main>
-      <section class='comment-input'>
-        <p>Add Your Comment:</p>
-        <input data-bind="value: comment"><button data-bind="click: addComment">+</button>
-      </section>
+<body>
+  <header>
+    <h1>Comments</h1>
+    <p>A simple app that allows a user to input comments</p>
+  </header>
 
-      <section class='comments' data-bind="foreach: comments">
-        <p data-bind="text: title"></p>
-      </section>
-    </main>
+  <main>
+    <section class='comment-input'>
+      <p>Add Your Comment:</p>
+      <input data-bind="value: comment"><button data-bind="click: addComment">+</button>
+    </section>
 
-    <footer>
-      <p>this work is released into the public domain</p>
-    </footer>
+    <section class='comments' data-bind="foreach: comments">
+      <p data-bind="text: title"></p>
+    </section>
+  </main>
 
-    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
-    <script src="knockout-3.4.0.js"></script>
-    <script src="app.js"></script>
-  </body>
+  <footer>
+    <p>this work is released into the public domain</p>
+  </footer>
+
+  <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+  <script src="knockout-3.4.0.js"></script>
+  <script src="app.js"></script>
+</body>
+
 </html>

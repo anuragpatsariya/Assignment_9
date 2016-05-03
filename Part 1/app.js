@@ -1,6 +1,6 @@
 /*globals ko*/
 "use strict";
-function viewPostModel() {
+function viewCommentModel() {
     var scope = this;
     
     scope.comment = ko.observable("");
@@ -16,4 +16,4 @@ function viewPostModel() {
     };
 }
 
-ko.applyBindings(new viewPostModel());
+ko.applyBindings(new viewCommentModel());
